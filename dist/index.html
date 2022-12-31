@@ -22,7 +22,10 @@
     <!-- Custom-css  -->
     <link rel="stylesheet" href="css/main.css" />
 
-    <title>Usha</title>
+    <!-- Java-Script  -->
+    <script defer src="js/scripts.js"></script>
+
+    <title>THAPA</title>
   </head>
   <body>
     <!-- Body Starts here  -->
@@ -34,19 +37,27 @@
           <p>Web Developer</p>
         </div>
         <div class="navbrand">
-          <ul class="nav-item">
-            <li class="nav-link"><a href="#home">Home</a></li>
-            <li class="nav-link"><a href="#home">About</a></li>
-            <li class="nav-link"><a href="#home">Skills</a></li>
-            <li class="nav-link"><a href="#home">Projects</a></li>
-            <li class="nav-link"><a href="#home">Education</a></li>
-            <li class="nav-link"><a href="#home">Hire Me</a></li>
-          </ul>
+          <div class="navbrand-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <div class="nav-item">
+            <ul class="nav-item">
+              <li class="nav-link"><a href="#Home">Home</a></li>
+              <li class="nav-link"><a href="#Education">Education</a></li>
+              <li class="nav-link"><a href="#About">About</a></li>
+              <li class="nav-link"><a href="#Skills">Skills</a></li>
+              <li class="nav-link"><a href="#Projects">Projects</a></li>
+              <li class="nav-link"><a href="#Contact">Hire Me</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
 
       <!-- Hero-Section Starts Here  -->
       <section class="hero">
+        <i class="fa-regular fa-sun icon" id="switch"></i>
         <div class="hero-content">
           <h2 class="hello">Hello there! ✋</h2>
           <h2 class="intro">I'M <span class="name">Usha</span> THAPA</h2>
@@ -64,8 +75,35 @@
         </div>
       </section>
 
+      <!-- Education & More  -->
+      <section class="education" id="Education">
+        <div class="rectangle">
+          <div class="content">
+            <div class="circle"><i class="fa-solid fa-award"></i></div>
+            <div class="edu-cont">
+              <p>5+ Projects</p>
+              <p>completed</p>
+            </div>
+          </div>
+          <div class="content">
+            <div class="circle"><i class="fa-solid fa-award"></i></div>
+            <div class="edu-cont">
+              <p>5+ Projects</p>
+              <p>completed</p>
+            </div>
+          </div>
+          <div class="content">
+            <div class="circle"><i class="fa-solid fa-award"></i></div>
+            <div class="edu-cont">
+              <p>5+ Projects</p>
+              <p>completed</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- ABOUT-ME Starts Here  -->
-      <section class="about">
+      <section class="about" id="About">
         <div class="about-img">
           <img src="/dist/images/nobg02.png" alt="" />
         </div>
@@ -92,35 +130,8 @@
         </div>
       </section>
 
-      <!-- Education & More  -->
-      <section class="education">
-        <div class="rectangle">
-          <div class="content">
-            <div class="circle"><i class="fa-solid fa-award"></i></div>
-            <div class="edu-cont">
-              <p>5+ Projects</p>
-              <p>completed</p>
-            </div>
-          </div>
-          <div class="content">
-            <div class="circle"><i class="fa-solid fa-award"></i></div>
-            <div class="edu-cont">
-              <p>5+ Projects</p>
-              <p>completed</p>
-            </div>
-          </div>
-          <div class="content">
-            <div class="circle"><i class="fa-solid fa-award"></i></div>
-            <div class="edu-cont">
-              <p>5+ Projects</p>
-              <p>completed</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- Skills  -->
-      <section class="skills">
+      <section class="skills" id="Skills">
         <h1>Skills</h1>
         <div class="skill">
           <div class="skills-cont">
@@ -154,10 +165,47 @@
         </div>
       </section>
       <!-- projects  -->
-      <section class="projects"></section>
+      <section class="projects" id="Projects">
+        <h1>Latest Projects</h1>
+        <div class="grid">
+          <div class="img-wrapper">
+            <img
+              class="blur zoom"
+              src="/dist/images/computer-pink.jpg"
+              alt=""
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+              repudiandae rem dolore, perspiciatis nostrum qui.
+            </p>
+          </div>
+          <div class="img-wrapper">
+            <img
+              class="blur zoom"
+              src="/dist/images/computer-pink.jpg"
+              alt=""
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+              repudiandae rem dolore, perspiciatis nostrum qui.
+            </p>
+          </div>
+          <div class="img-wrapper">
+            <img
+              class="blur zoom"
+              src="/dist/images/computer-pink.jpg"
+              alt=""
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+              repudiandae rem dolore, perspiciatis nostrum qui.
+            </p>
+          </div>
+        </div>
+      </section>
 
       <!-- Contact  -->
-      <section class="contact">
+      <section class="contact" id="Contact">
         <div class="contact-content">
           <h1>Contact <span>Me!</span></h1>
           <p class="xsmall">Have you got any project idea!</p>
@@ -197,6 +245,11 @@
             <button type="submit">Submit</button>
           </form>
         </div>
+      </section>
+
+      <!-- Footer  -->
+      <section class="footer">
+        <p>&copy; All Right Reserved by Usha!! 👌</p>
       </section>
     </div>
   </body>
