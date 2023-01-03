@@ -6,12 +6,13 @@ toggleButton.addEventListener("click", () => {
 });
 
 const switchButton = document.getElementById("switch");
+const iconImg = document.getElementById("icon-img");
 
 switchButton.addEventListener("click", () => {
   document.body.classList.toggle("theme");
-  if (document.bidy.classList.contains("theme")) {
-    switchButton.class = "fa-regular fa-sun";
+  if (document.body.classList.contains("theme")) {
+    iconImg.src = "images/moon.png";
   } else {
-    switchButton.class = "fa-solid fa-moon-stars";
+    iconImg.src = "images/sun.png";
   }
 });

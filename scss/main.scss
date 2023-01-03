@@ -90,6 +90,8 @@ body {
       position: absolute;
       top: 1rem;
       left: 2rem;
+      height: 20px;
+      width: 20px;
     }
 
     .hero-content {
@@ -368,7 +370,7 @@ body {
     // background: $secondary-color;
     // color: $primary-color;
     @include flex(row);
-    gap: 1rem;
+    gap: 1.3rem;
     .contact-content {
       width: 50%;
       h1 {
@@ -403,6 +405,7 @@ body {
       }
     }
     .contact-form {
+      padding: 0 0.4rem;
       width: 50%;
       font-size: map-get($map: $font-size, $key: small);
       color: $primary-color;
@@ -447,11 +450,40 @@ body {
   }
 
   .footer {
-    // background: $secondary-color;
-    // color: $primary-color;
     padding: 1rem 0;
     text-align: center;
-    // box-shadow: -5px -6px 8px rgba($color: $pops-color, $alpha: 0.5);
+    position: relative;
+
+    a {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      width: 36px;
+      height: 36px;
+      background: $pops-color;
+      border-radius: 50%;
+
+      i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: arrow 2s infinite;
+
+        @keyframes arrow {
+          0% {
+            top: 50%;
+          }
+          50% {
+            top: 70%;
+            opacity: 0.5;
+          }
+          100% {
+            top: 40%;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -520,6 +552,13 @@ body {
       .about-img {
         width: 100%;
       }
+
+      .about-content {
+        width: 100%;
+        .p {
+          width: 100%;
+        }
+      }
     }
 
     .education {
@@ -542,14 +581,24 @@ body {
     }
 
     .contact {
+      width: 100%;
       @include flex(column);
       align-items: flex-start;
       gap: 3rem;
 
+      .contact-content {
+        width: 100%;
+      }
+
       .contact-form {
+        width: 100%;
         padding: 1rem;
         border-radius: 0.5rem;
-        border: 1px dashed rgba($color: $pop-color, $alpha: 0.3);
+        border: 2px dashed rgba($color: $pop-color, $alpha: 0.3);
+
+        button {
+          width: 100%;
+        }
       }
     }
   }
